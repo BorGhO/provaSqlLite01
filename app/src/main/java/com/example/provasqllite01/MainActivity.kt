@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
         DB = SQHelper(applicationContext)
         dataSql = DB.data_getter   //data_getter è il Cursor
 
-       // showData()
+       
 
 
     }
