@@ -92,47 +92,7 @@ class RecycleAdapter01 (data:ArrayList<RecycleClass01>, var context: Context) : 
 
             Snackbar.make(holder.card,"Eliminato l'elemento "+ indice, Snackbar.LENGTH_LONG)
                     .setAction("Action", null).show()
-/*
-            val alert = Dialog(context)
-            alert.setContentView((R.layout.custom_alert))
-            alert.window!!.setType(WindowManager.LayoutParams.TYPE_TOAST)   //per qualche motivo ci vuole toast qui
-            alert.setTitle("Recycler porco")
-            val text = alert.findViewById<TextView>(R.id.titleAlert)
-            val desc = alert.findViewById<TextView>(R.id.descAlert)
-            val image = alert.findViewById<ImageView>(R.id.alertImage)
-            val button = alert.findViewById<Button>(R.id.closeAlert01)
 
-            text.text = data[position].title
-            desc.text = itemCount.toString()
-            image.setImageResource( data[position].image)
-
-
-
-            alert.show()
-
-
-            button.setOnClickListener{alert.dismiss()}
-
-            button.setOnLongClickListener {
-                //Intent(Intent.ACTION_DIAL, Uri.fromParts("tel", "119", null))
-                val intent2 = Intent(Intent.ACTION_DIAL, Uri.fromParts("tel", data[position].phone , null))
-                intent2.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
-                startActivity(context, intent2, null)
-                alert.dismiss()
-                true
-            }
-
-
-
-           text.setOnClickListener{
-               parla(text.text.toString())
-           }
-           desc.setOnClickListener{
-               parla(desc.text.toString())
-           }
-
-
-       }*/
         }
     }
 

@@ -61,9 +61,9 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    fun porco(){
+    fun scriviQualcosa(){
 
-        println("porcodio")
+        println("scrive qualcosa")
     }
 
 
